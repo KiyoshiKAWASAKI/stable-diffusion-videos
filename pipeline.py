@@ -4,7 +4,7 @@ from tqdm import tqdm
 
 
 morph_pairs = [["a cat", "a dog"], ["a cat", "a bunny"], ["a dog", "a bunny"], ["a whale", "a shark"],
-               ["a hammerhead shark", "a tiger shark"], ["a cock", "a hen"], ["a leatherback a turtle", "a box turtle"],
+               ["a hammerhead shark", "a tiger shark"], ["a cock", "a hen"], ["a leatherback turtle", "a box turtle"],
                ["a dog", "a hyena"], ["a cat", "a lion"], ["a cat","a tiger"], ["a lion", "tiger"], ["an alligator", "a lizard"],
                ["a scorpion", "a spider"], ["a dog" , "a wolf"], ["a peacock", "a quail"], ["a goose", "a duck"], ["a chicken" , "a duck"],
                ["a goose", "a swang"], ["a bear", "a koala"], ["a bear", "a kangaroo"], ["a dungeon crab", "a king crab"],
@@ -33,11 +33,7 @@ for i in tqdm(range(len(morph_pairs))):
     source = one_pair[0]
     target = one_pair[1]
 
-    morph_name = source.split(" ")[1] + "2" + target.split(" ")[1]
-
-    print(source)
-    print(target)
-    print(morph_name)
+    morph_name = source.split(" ", 1)[-1] + "2" + target.split(" ", 1)[-1]
 
     pipeline = StableDiffusionWalkPipeline.from_pretrained(
         "CompVis/stable-diffusion-v1-4",
