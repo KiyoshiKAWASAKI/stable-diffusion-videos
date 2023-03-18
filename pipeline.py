@@ -4,15 +4,15 @@ from tqdm import tqdm
 
 
 morph_pairs = [["a cat", "a dog"], ["a cat", "a bunny"], ["a dog", "a bunny"], ["a whale", "a shark"],
-               ["a hammerhead shark", "a tiger shark"], ["a cock", "a hen"], ["a leatherback turtle", "a box turtle"],
+            ["a cock", "a hen"],
                ["a dog", "a hyena"], ["a cat", "a lion"], ["a cat","a tiger"], ["a lion", "tiger"], ["an alligator", "a lizard"],
                ["a scorpion", "a spider"], ["a dog" , "a wolf"], ["a peacock", "a quail"], ["a goose", "a duck"], ["a chicken" , "a duck"],
                ["a goose", "a swang"], ["a bear", "a koala"], ["a bear", "a kangaroo"], ["a dungeon crab", "a king crab"],
-               ["a lobster", "a crawfish"], ["a spoonbill", "a flamingo"], ["a flamingo" , "a pelican"],["a fox", "a hyena"],
+               ["a spoonbill", "a flamingo"], ["a flamingo" , "a pelican"],["a fox", "a hyena"],
                ["a dog", "a fox"], ["a fly" , "a bee"], ["a bee", "a butterfly"], ["a starfish", "a sea urchin"],
                ["a hamster", "a hedgehog"], ["a groundhog", "a beaver"], ["a horse", "a zebra"], ["a guinea pig", "a chinchilla"],
                ["a buffalo", "a bison"], ["a worthog", "a pig"],["a weasal", "a mink"], ["a skunk", "a badger"],
-               ["a monkey", "a gorilla"],["a panda", "a black bear"],["a soccer", "a basketball"],["a basketball", "a volleyball"],
+               ["a monkey", "a gorilla"],["a panda", "a black bear"],["a soccer", "a basketball"],
                ["a guitar", "a violin"], ["a cabinet", "a dresser"],["a cleaver", "a knife"], ["a coffee mug", "a glass"],
                ["a cowboy boot", "a sneaker"], ["guitar", "electric guitar"], ["a wooden chair", "a folding chair"],
                ["a TV remote", "a phone"], ["a truck", "a garbage truck"], ["an ipod" , "an iphone"], ["a jeep", "an SUV"],
